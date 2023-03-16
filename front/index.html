@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Biblioteca</title>
+</head>
+
+<body>
+    <div id="fundo">
+    <div id="sup">Biblioteca
+        <label for="sup"></label>
+    </div>
+    <header>
+        <form id="cadastro">
+            <input type="text" placeholder="Título do livro" name="Título do livro" id="nome" required />
+            <input type="text" placeholder="Nome do autor" name="Nome do autor" id="autor" required />
+            <input type="number" placeholder="Valor" step="any" name="valor" id="valor" required />
+            <input type="submit" value="Cadastrar" />
+        </form>
+    </header>
+    <main>
+        <div class="rotulos">
+            <label for="nome">Nome</label>
+            <label for="autor">Autor</label>
+            <label for="valor">Valor</label>
+            <label for="valor">Excluir</label>
+        </div>
+        <table>
+            <thead>
+            </thead>
+            <tbody id="corpo"></tbody>
+        </table>
+    </main>
+    <footer>
+        <label for="total">Total:</label>
+        <input type="text" name="total" id="total" style="text-align: right;" readonly/>
+    </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

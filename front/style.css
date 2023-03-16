@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/biblioteca-universitaria.jpg);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    height: 4vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.rotulos {
+    width: 90vw;
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input {
+    max-width: 160px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+main {
+    height: 50vh;
+    width: 90vw;
+    border: 3px solid white;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgb(255, 225, 192);
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #ff9a3b;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+main table {
+    width: 50vw;
+    border-radius: 5px;
+}
+
+main table tr:nth-child(even) {
+    background: rgba(128, 128, 128, 0.651);
+    border-radius: 5px;
+}
+
+main table tr{
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    color: white;
+}
+td{
+    text-align: center;
+
+}
+th{
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+    box-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+    box-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+}
+
+footer {
+    height: 6vh;
+    width: 90vw;
+    border: 3px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#sup {
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: white;
+    background-color: transparent;
+}
+
+#selecao {
+    max-width: 160px;
+    margin: 5px;
+    border: 1px solid #ff7e05;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    color: #a35002;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+#fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.445);
+}
